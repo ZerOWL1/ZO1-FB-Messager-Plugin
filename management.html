@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META TAG-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="title" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="url-link" />
+    <meta property="og:image" content="url-img" />
+
+    <!-- TITLE -->
+    <title>Profile</title>
+
+    <!-- BOOTSTRAP CDNJS OR OTHERS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css"> -->
+
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet' />
+
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="styles/site.css" />
+
+    <!-- OTHER STYLES -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar-container d-flex justify-content-between align-items-center">
+        <label for="check-left" class="navbar-logo">
+            <input type="checkbox" id="check-left" checked hidden/>
+            <strong>CMS</strong>
+        </label>
+        <label for="check" class="navbar-user">
+            <input type="checkbox" id="check" hidden/>
+            <i class='bx bxs-user'></i>
+            <i class='bx bxs-down-arrow'></i>
+        </label>
+    </div>
+    <div class="user-dropdown top-up">
+        <a href="management.html" class="user-profile user-option text-decoration-none">
+            <i class='bx bxs-user'></i>
+            <span>User Profile</span>
+        </a>
+        <a href="login.html" class="user-logout user-option text-decoration-none">
+            <i class='bx bx-log-out'></i>
+            <span>Logout</span>
+        </a>
+    </div>
+    <!-- BODY PAGE -->
+    <div class="body-container">
+        <!-- LEFTSIDE -->
+        <div class="body-left">
+            <div class="search">
+                <form class="d-flex" id="form-search">
+                    <input class="form-control" type="search" placeholder="Search">
+                    <button class="btn" type="submit"><i class='bx bx-search' ></i></button>
+                </form>
+            </div>
+            <hr>
+            <div class="view-content">
+                <a class="text-decoration-none view-c">
+                    <i class='bx bx-table'></i>
+                    <span>
+                        View contents
+                    </span>
+                </a>
+            </div>
+            <div class="form-content">
+                <a class="text-decoration-none add-c">
+                    <i class='bx bx-link-external'></i>
+                    <span>
+                        Form content
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="body-right">
+            <p class="note">Click CMS to Slide LEFT SIDE</p>
+            <h1>Edit Profile</h1>
+            <hr>
+            <div class="form-profile-title">
+                Profile From Elements
+            </div>
+            <div class="form-profile-container">
+                <div class="form-profile-content container w-75">
+                    <form action="ProfileControl/AjaxPostCall" method="POST" id="form-profile">
+                        <div class="form-group mb-3">
+                            <label for="p-firtName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="p-firtName" placeholder="Enter the first name" data-p-firstName="First name">
+                            <small></small>
+                        </div>
+                        <div class="form-groupm b-3">
+                            <label for="p-lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="p-lastName" placeholder="Enter the last name" data-p-lastName="Last name">
+                            <small></small>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="p-email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="p-email" placeholder="Enter e-mail format your_email@example.com" readonly disabled>
+                            <small></small>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="p-phone" class="form-label">Phone</label>
+                            <input type="text" class="form-control" id="p-phone" placeholder="Enter your phone number" data-p-phone="Phone">
+                            <small></small>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="p-desc" class="form-label">Description</label>
+                            <textarea class="form-control" name="p-desc" id="p-desc" rows="3" data-p-desc="Description"></textarea>
+                            <small></small>
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary">Submit Button</button>
+                        <button type="button" class="btn btn-outline-secondary rs-btn">Reset Button</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- FRAMEWORK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <!-- <script src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/c41956cca0.js " crossorigin="anonymous "></script>
+
+    <!-- CHART & DATATABLE JS -->
+
+    <!-- API SCRIPT & JSON -->
+
+    <!-- OWN SCRIPT -->
+    <script src="js/management.js"></script>
+    <script src="js/script.js"></script>
+    <!-- OTHER SCRIPT -->
+    <script>
+    </script>
+</body>
+
+</html>

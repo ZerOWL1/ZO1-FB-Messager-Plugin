@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META TAG-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="ZerOWl1 Front-End Template Guide" />
+    <meta property="og:title" content="title" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="url-link" />
+    <meta property="og:image" content="url-img" />
+
+    <!-- TITLE -->
+    <title></title>
+
+    <!-- BOOTSTRAP CDNJS OR OTHERS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet' />
+
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="styles/site.css" />
+
+    <!-- ICON WEB PAGE -->
+    <link rel="icon" type="image/png" href="assets/icon/logo.png" />
+
+    <!-- OTHER STYLES -->
+    <style>
+
+    </style>
+</head>
+
+<body style="background: #C5C5DA;">
+    <div class="form-container">
+        <div class="form-title">
+            <h5>Register</h5>
+        </div>
+        <hr>
+        <form action="http://localhost:8000/register" method="GET" id="form-register" class="form form-reg">
+            <div class="form-group">
+                <input type="text" class="form-control" name="regName" id="reg-name" data-r-pass="Username" placeholder="User name">
+                <small></small>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="regEmail" id="reg-email" data-r-email="Email" placeholder="E-mail">
+                <small></small>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="regPass" id="reg-pass" data-r-pass="Password" placeholder="Password">
+                <small></small>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="regRepass" id="reg-repass" data-r-repass="Re-Password" placeholder="Re-Password">
+                <small></small>
+            </div>
+            <button type="submit" class="btn btn-success form-control">Register</button>
+        </form>
+        <div class="register-page">
+            <a href="login.html" class="text-decoration-none">Click here to Login</a>
+        </div>
+    </div>
+
+    <!-- FRAMEWORK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- CHART & DATATABLE JS -->
+
+    <!-- API SCRIPT & JSON -->
+
+    <!-- OWN SCRIPT -->
+    <script src="js/script.js"></script>
+    <!-- OTHER SCRIPT -->
+    <script>
+    </script>
+</body>
+
+</html>

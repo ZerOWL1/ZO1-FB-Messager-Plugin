@@ -1,0 +1,40 @@
+{
+  "account": [
+    {
+      "firstName": "Lu",
+      "lastName": "Chai",
+      "email": "admin@gmail.com",
+      "password": "123478kid",
+      "phone": "012345678",
+      "desc": "Nothing to Say",
+      "roll": "2"
+    },
+    {
+      "firstName": "Nguyen",
+      "lastName": "A",
+      "email": "NguyenA@gmail.com",
+      "password": "123478kid",
+      "phone": "012345678",
+      "desc": "Nguyen Van A Desc",
+      "roll": "1"
+    },
+    {
+      "firstName": "Guest",
+      "lastName": "Account",
+      "email": "guest@gmail.com",
+      "password": "123478kid",
+      "phone": "012345678",
+      "desc": "Guest Desc",
+      "roll": "0"
+    },
+    {
+      "firstName": "haild8",
+      "lastName": "",
+      "email": "haild.works@gmail.com",
+      "password": "123478kid",
+      "phone": "012345678",
+      "desc": "haild8 Desc",
+      "roll": "0"
+    }
+  ]
+}
