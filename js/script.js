@@ -239,14 +239,14 @@ $('.view-content').click(async function() {
     let loading = '<h1>LOADING...</h1>';
     rightBody.innerHTML = loading;
     await sleep(2500);
-    $('.body-right').load('content/view-content.html');
+    $('.body-right').load('../content/view-content.html');
 })
 
 $('.form-content').click(async function() {
     let loading = '<h1>LOADING...</h1>';
     rightBody.innerHTML = loading;
     await sleep(2500);
-    $('.body-right').load('content/add-content.html');
+    $('.body-right').load('../content/add-content.html');
 })
 
 /** LOGIN SCRIPT
